@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Chetan 🎂</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, #ffeaa7, #74b9ff);
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(circle at top, rgba(255,255,255,0.25), transparent);
+      pointer-events: none;
+    }
+
+    .card {
+      position: relative;
+      width: min(420px, 94vw);
+      padding: 24px 20px 28px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+      text-align: center;
+      backdrop-filter: blur(12px);
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: rgba(46, 204, 113, 0.12);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 8px;
+    }
+
+    .tag span {
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .sub {
+      font-size: 14px;
+      opacity: 0.8;
+      margin-bottom: 18px;
+    }
+
+    .photo-wrap {
+      width: 170px;
+      height: 220px;
+      border-radius: 24px;
+      overflow: hidden;
+      margin: 0 auto 16px;
+      border: 3px solid #ffeaa7;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    .photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .line {
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .quote {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #e17055;
+    }
+
+    .hint {
+      font-size: 11px;
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      border: none;
+      font-size: 13px;
+      cursor: pointer;
+      background: #0984e3;
+      color: #fff;
+      box-shadow: 0 10px 20px rgba(9, 132, 227, 0.4);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn:active {
+      transform: translateY(1px) scale(0.98);
+      box-shadow: 0 4px 10px rgba(9, 132, 227, 0.4);
+    }
+
+    .footer {
+      margin-top: 10px;
+      font-size: 11px;
+      opacity: 0.65;
+    }
+
+    /* Floating emojis */
+    .float {
+      position: fixed;
+      font-size: 26px;
+      animation: floatUp 12s linear infinite;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(20vh) translateX(0);
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-120vh) translateX(40px);
+        opacity: 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px 16px 22px;
+      }
+      h1 {
+        font-size: 22px;
+      }
+      .photo-wrap {
+        width: 150px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <!-- Floating emojis -->
+  <div class="float" style="left: 8%; animation-delay: 0s;">🎈</div>
+  <div class="float" style="left: 22%; animation-delay: 3s;">🎉</div>
+  <div class="float" style="left: 48%; animation-delay: 6s;">🎂</div>
+  <div class="float" style="left: 72%; animation-delay: 1.5s;">💚</div>
+  <div class="float" style="left: 88%; animation-delay: 4.5s;">🎁</div>
+
+  <div class="card">
+    <div class="tag">
+      <span>✨</span> SPECIAL DAY ALERT
+    </div>
+
+    <h1>Happy Birthday, Chetan! 🎂</h1>
+    <p class="sub">12 December • Made with 💚 just for you</p>
+
+    <div class="photo-wrap">
+      <!-- Yaha apni photo ka online link daalo -->
+      <img
+        src="IMAGE_URL_HERE"
+        alt="Chetan in school uniform"
+      />
+    </div>
+
+    <p class="line">Aaj ka official birthday wish ⬇️</p>
+    <p class="quote">“Chetan tera dhanda aacha chale!” 😎💸</p>
+
+    <p class="hint">👇 Calm music ke liye tap karo</p>
+    <button class="btn" id="playBtn">
+      ▶️ Play Birthday Vibes
+    </button>
+
+    <p class="footer">
+      Made with pyaar by someone jo tujhe bahut special maanta hai 💛
+    </p>
+  </div>
+
+  <!-- Calm background music -->
+  <!-- Yaha kisi calm MP3 ka direct link daalo -->
+  <audio id="bg-music" src="MUSIC_URL_HERE" loop></audio>
+
+  <script>
+    const audio = document.getElementById("bg-music");
+    const btn = document.getElementById("playBtn");
+
+    function playMusic() {
+      audio
+        .play()
+        .then(() => {
+          btn.textContent = "🎵 Playing...";
+        })
+        .catch(() => {
+          btn.textContent = "Tap again to play 🔁";
+        });
+    }
+
+    btn.addEventListener("click", playMusic);
+  </script>
+</body>
+</html>
